@@ -27,7 +27,7 @@
     <div class="home-content">
         <h1>Hi, I'm<span> Rohit Gaur</span></h1>
         <div class="text-animate">
-            <h3>Frontend Developer</h3>
+            <h3>Web Developer</h3>
         </div>
         <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, natus laborum! Necessitatibus sint perspiciatis esse, reprehenderit quia quo impedit fuga ab, saepe maiores labore. Veritatis, iste unde. Quibusdam suscipit illum tempora dolorem voluptates saepe?</p> -->
             <div class="btn-box">
@@ -45,7 +45,7 @@
         <a href="https://github.com/RohitGgaur" class="bx bxl-github"></a>
         <a href="https://www.linkedin.com/in/rohit-gaur-8968b123b" class="bx bxl-linkedin"></a>
         <a href=" https://twitter.com/_Rohit_Gaur?t=jcNVrUYjg4bI61OKalqvcA&s=08" class="bx bxl-twitter"></a>
-        <a href="" class="bx bxl-instagram"></a>
+        <a href="https://instagram.com/rohit__gaur" class="bx bxl-instagram"></a>
         
         
     </div>
@@ -58,8 +58,10 @@
         <!-- <span class="circle-spin"></span> -->
     </div>
     <div class="about-content">
-        <h3>Frontend Developer!</h3>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores eius placeat sint iure ex non quo labore expedita cumque aperiam dignissimos porro suscipit ipsa facere excepturi, veritatis deleniti quas eligendi. Maiores repellat minus temporibus dolorem ipsam aliquid cum incidunt vel consectetur unde, at iusto reprehenderit laborum est enim nam dignissimos animi.</p>
+        <h3>Web Developer!</h3>
+        <p>Hello I'm Rohit Gaur, I reside in Gorakhpur where I'm pursing my B.Tech in Information Technology branch from Madan Mohan Malaviya University of Technology. <br> Nowadays I'm learning web development and trying to develop more interesting projects. Moreover, I have keen interest in coding as well as data structure & algorithm. 
+           <br>  <b>Position of Responsibility:-</b> Executive Member of Finance club at MMMUT, Gorakhpur
+        </p>
         <div class="btn-box btns">
             <a href="#" class="btn">Read More</a>
         </div>
@@ -74,22 +76,22 @@
                 <div class="education-content">
                     <div class="content">
                         <div class="years"><i class='bx bxs-calendar'></i>2018-19</div>
-                        <h3>Matrix -  Adarsh Rastriya Inter college.Mainpuri</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit aliquam odio harum ullam! Libero obcaecati quia velit iste iusto id veritatis inventore magni distinctio recusandae!</p>
+                        <h3>Secondary School-  Adarsh Rastriya Inter College.Mainpuri,Uttar Pradesh</h3>
+                        <p>I have completed my high school from Adarsh Rastriya Inter College Which is affiliated to UP board with in aggregate percentage of 85.5%.</p>
                     </div>
                 </div>
                 <div class="education-content">
                     <div class="content">
                         <div class="years"><i class='bx bxs-calendar'></i>2020-21</div>
-                        <h3>Intermediate - Adarsh Rastriya Inter college.Mainpuri</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit aliquam odio harum ullam! Libero obcaecati quia velit iste iusto id veritatis inventore magni distinctio recusandae!</p>
+                        <h3> Seniour Secondary School - Adarsh Rastriya Inter College.Mainpuri,Uttar Pradesh</h3>
+                        <p>I have completed my Intermediate from Adarsh Rastriya Inter College Which is affiliated to UP board with in aggregate percentage of 80.8%. </p>
                     </div>
                 </div>
                 <div class="education-content">
                     <div class="content">
                         <div class="years"><i class='bx bxs-calendar'></i>2021-current</div>
-                        <h3>B.tech - Madan Mohan Malaviya University of Technology.Gorakhpur</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit aliquam odio harum ullam! Libero obcaecati quia velit iste iusto id veritatis inventore magni distinctio recusandae!</p>
+                        <h3>B.tech - Madan Mohan Malaviya University of Technology.Gorakhpur,Uttar Pradesh</h3>
+                        <p>I am currently third year student in MMMUT</p>
                     </div>
                 </div>
             </div>
@@ -151,31 +153,31 @@
   <!-- contact section design -->
   <section class="contact" id="contact">
     <h2 class="heading">contact <span>Me!</span></h2>
-    <form action="#" onsubmit="sendEmail(); reset(); return false;">
+    <form onsubmit="sendEmail(); reset(); return false;">
         <div class="input-box">
             <div class="input-field">
-                <input type="text" placeholder="Full Name" required>
+                <input type="text" id="name" placeholder="Full Name" required>
                 <span class="focus"></span>
             </div>
             <div class="input-field">
-                <input type="text" placeholder="Email Address" required>
+                <input type="text" id="email-Address" placeholder="Email Address" required>
                 <span class="focus"></span>
             </div>
            
         </div>
         <div class="input-box">
             <div class="input-field">
-                <input type="number" placeholder="Mobile Number" required>
+                <input type="number" id="phone" placeholder="Mobile Number" required>
                 <span class="focus"></span>
             </div>
             <div class="input-field">
-                <input type="text" placeholder="Email Subject" required>
+                <input type="text" id="subject" placeholder="Email Subject" required>
                 <span class="focus"></span>
             </div>
         </div>
         
         <div class="textarea-field">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
             <span class="focus"></span>
         </div>
         <div class="btn-box">
@@ -203,30 +205,22 @@
 <script>
     function sendEmail(){
         Email.send({
-    Host : "smtp.elasticemail.com",
-    Username : "username",
-    Password : "password",
-    To : 'them@website.com',
-    From : "you@isp.com",
-    Subject : "This is the subject",
-    Body : "And this is the body"
+    Host : "smtp.gmail.com",
+    Username : "gaur0423@gmail.com",
+    Password : "Rohit@12345",
+    To : 'gaur0423@gmail.com',
+    From : document.getElementById("email-Addresh").value,
+    Subject : "New Content Enquiry",
+    Body : "Name:" +document.getElementById("name").value
+       + "<br> Email Address: " + getElementById("email-Addresh").value
+       + "<br> Mobile Number: " + getElementById("phone").value
+       + "<br> Email Subject: " + getElementById("subject").value
+       + "<br> Your Message" + getElementById("message").value
 }).then(
-  message => alert(message)
+  message => alert("message sent successfully")
 );
     }
 </script>
-
-
-
-
-
-
-
-
-
-
-
-
 
     <script src="./assets/script1.js"></script>
 </body>
